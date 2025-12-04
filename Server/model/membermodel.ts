@@ -5,6 +5,7 @@ const memberSchema = new mongoose.Schema({
     lastname: { type: String, required: true },
     phonenumber: {type: Number, required: true },
     pwd: { type: String, required: true },
+    username: {type: String, require: true}
 })
 
 const Member = mongoose.model('Member', memberSchema);

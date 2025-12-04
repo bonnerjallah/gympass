@@ -5,6 +5,7 @@ const staffSchema = new mongoose.Schema({
     lastname: { type: String, required: true },
     phonenumber: { type: Number, required: true },
     pwd: { type: String, required: true },
+    username: {type: String, require: true}
 })
 
 const Staff = mongoose.model('Staff', staffSchema);
